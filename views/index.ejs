@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoExpress</title>
+</head>
+<body>
+    <form action="/" method="post">
+         <input autofocus id="task" type="text" name="task" placeholder="Enter Task Todo" />
+        <input type="submit" name="" value="Add">
+    </form>
+    <h2>Your Tasks</h2>
+    <% if(todos){%>
+        <%for(let i = 0; i < todos.length; i++){%>
+            <li>
+                <%= todos[i] %>
+            </li>
+        <%}%>
+    <%}%>
+    <script>
+
+    </script>
+</body>
+</html>
